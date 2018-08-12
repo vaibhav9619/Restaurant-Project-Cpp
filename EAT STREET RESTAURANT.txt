@@ -1,0 +1,1095 @@
+
+PROGRAM CODE
+
+ //PROGRAM ON RESTAURANT by( ARSHDEEP  and VAIBHAV XII-A)
+
+#include<iostream.h>
+#include<conio.h>
+#include<dos.h>
+#include<fstream.h>
+#include<process.h>
+#include<stdio.h>
+void pay(int );
+class info
+{
+char name[30] ;
+long int cn,h,amt,uou;
+long float  mb;
+public:
+void getdata()
+{cout<<"\nNAME: ";
+gets(name);
+cout<<"\nMOBILE NO. :";
+cin>>mb;
+cout<<"\nCREDIT CARD NO. :";
+cin>>cn;
+cout<<"\nAMOUNT(in card) : RS.";
+cin>>amt;
+cout<<"\nCUSTOMER NO. :";
+cin>>h;
+}
+void putdata()
+{
+cout<<"\n......EAT STREET CUSTOMER..... ";
+cout<<"\nNAME :";
+puts(name);
+cout<<"MOBILE NO. :"<<mb;
+cout<<"\nCREDIT CARD NO. :"<<cn;
+cout<<"\nCUSTOMER NO. :  "<<h;
+cout<<"\nAMOUNT(in card): RS."<<amt;}
+
+int amtt(int );
+
+int getno()
+{return h;}
+void deposit(int );
+
+}arsh,arshu,ars,am,arsh1;
+
+
+int info::amtt(int a)
+{
+amt=amt-a;
+return 0;
+}
+void info::deposit(int sd)
+{
+amt+=sd;
+}
+void arshdeep(int );
+int main()
+{
+textbackground(RED);
+textcolor(BLUE);
+clrscr();
+textbackground(BLUE);
+cprintf("      ");
+
+textbackground(WHITE);
+
+textcolor(BLUE+BLINK);
+cprintf(         "                  EAT STREET RESTAURANT                             " );
+textbackground(BLUE);
+cprintf("      ");
+
+textbackground(BLUE);
+cprintf("      ");
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                   PUNJABI BAGH BRANCH                              " );
+textbackground(BLUE);
+cprintf("      ");
+textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(MAGENTA+BLINK);
+
+cprintf(         "MANAGER: ARSHDEEP SINGH                 ASS.MANAGER: VAIBHAV SADANA" );
+textbackground(BLUE);
+cprintf("      ");
+
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "CONTACT US: (EMAIL:eatstreet@gmail.com)         (PHONE:011-45530660)" );
+textbackground(BLUE);
+cprintf("      ");
+
+
+
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+
+textbackground(WHITE);
+
+textcolor(GREEN+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(BLUE);
+cprintf("      ");
+
+
+textbackground(WHITE);
+
+textcolor(MAGENTA+BLINK);
+
+cprintf(         "                                                                    " );
+textbackground(BLUE);
+cprintf("      ");
+
+ textbackground(WHITE);
+
+getch();
+clrscr();
+fstream obj1;
+
+ obj1.open("sarr.DAT",ios::app|ios::in);
+clrscr();
+
+long int kk;
+char g,found;
+
+cout<<"\nHELLO...! WELCOME TO EAT STREET RESTAURANT";
+cout<<"\nARE YOU A NEW CUSTOMER ...?";
+cout<<"\n(press 1 for yes .....press 2 for no)";
+cin>>g;
+switch(g)
+{case '1':
+cout<<"\nPLEASE ENTER YOUR DETAILS ..." ;
+arsh.getdata();
+obj1.write((char*)&arsh,sizeof(arsh));
+cout<<"\nTHANK YOU FOR THE DETAILS ....";
+cout<<"\nYOUR RECORD HAS BEEN MADE....";
+obj1.close();
+break;
+case '2':
+goto fan;
+
+
+}
+
+clrscr();
+fan:
+for(int i=0;i<22;i++)
+cout<<"\n";
+cprintf("Menu is Loading..");
+for(int j=0;j<=60;j++)
+{
+textcolor(3);
+cprintf("Þ");
+delay(100);
+
+}
+label :
+lm:
+sds:
+bel:
+clrscr();
+
+gun:
+
+
+char ch;
+
+
+cout<<"\n\t\t........MAIN MENU........";
+cout<<"\nThe Categories are as follows:";
+cout<<"\n1.Vegetarian food";
+cout<<"\n2.Non-Vegetarian food";
+cout<<"\n3.Special Offers ";
+cout<<"\n4.Eat Street Bank";
+cout<<"\n5.EXIT";
+cout<<"\n6.Contact Us";
+
+
+cout<<"\nEnter your choice:";
+
+cin>>ch;
+
+switch(ch)
+{
+case '1':
+se:
+
+clrscr();
+
+cout<<"Vegetarian";
+
+
+cout<<"                    \n\t\t\t         VEG.MENU               ";
+cout<<"                         \t\t\t                ";
+cout<<" \n\n      VEG MEALS                                   SHAKES $ DRINKS                 "        ;
+cout<<"                                                                         "        ;
+cout<<"\n a.  Aloo Tikki           Rs.30        | f.  Mango shake         Rs.60                    "               ;
+cout<<"\n b.  Masala Gril.burger   Rs.40        | g.  Lime Juice          Rs.50              "              ;
+cout<<"\n c.  Rice and Curry       Rs.80        | h.  Faluda drink        Rs.90                      "           ;
+cout<<"\n d.  French Fries         Rs.60        | i.  Crusher drink       Rs.70             "     ;
+cout<<"\n e.  Veg Wrap             Rs.75        | j.  Chocolate mix       Rs.40 "       ;
+cout<<"\n\n       Meal Combos                                    Deserts   ";
+cout<<"\n       -----------	                              -------     ";
+cout<<"\n k.Combo 1:Veg combo       Rs.200     | n.Choco Cake            Rs.40            ";
+cout<<"\n l.Combo 2:Spl.VEG Thali   Rs.250     | o.Donuts                Rs.30                  ";
+cout<<"\n m.Happy Meal              Rs.180     | p.Nutty Cake            Rs.60   " ;
+
+int no,sum=0;
+char c,r,jk;
+cout<<"\n\n\t WHAT DO YOU WANT TO DO..??";
+cout<<"\n1.PLACE AN ORDER";
+cout<<"\n2.GOT TO MAIN MENU";
+cout<<"\n3.EXIT";
+cout<<"\nPlease give your choice : ";
+cin>>jk;
+switch(jk)
+{
+case '1':
+
+do
+{maj:
+cout<<"\n\n***PLEASE PLACE AN ORDER***";
+cout<<"\nENTER THE CODE OF THE ITEM";
+
+cin>>c;
+switch(c)
+{
+case 'a':cout<<"\n1. Aloo Tikki           Rs.30    ";
+
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*30;
+cout<<"\nTOTAL BILL :"<<sum;
+break;
+case 'b':cout<<"\n2.Masala Gril.burger      Rs.40  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+
+sum+=no*40;
+
+cout<<"\nTOTAL BILL :"<<sum;
+break;
+case 'c':cout<<"\n3. Rice and Curry       Rs.80   ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+
+sum+=no*80;
+
+cout<<"\nTOTAL BILL :"<<sum;
+break;
+case 'd':cout<<"\n 4.  French Fries         Rs.60     ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+
+sum+=no*60;
+
+cout<<"\nTOTAL BILL :"<<sum;
+break;
+case 'e':cout<<"\n 5.  Veg Wrap             Rs.75  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+
+sum+=no*75;
+
+cout<<"\nTOTAL BILL :"<<sum;
+break;
+case 'f':cout<<" 6.  Mango shake         Rs.60      ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>r;
+sum+=no*60;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'g':cout<<" 7.  Lime Juice          Rs.50 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*50;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'h':cout<<" 8.  Faluda drink        Rs.90       ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+
+cin>>r;
+sum+=no*90;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'i':cout<<" 9.  Crusher drink       Rs.70     ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*70;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+
+case 'j':cout<<"10. Chocolate mix       Rs.40 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*40;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'k':cout<<"\n 11.Combo 1:Veg combo       Rs.200 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*200;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'l':cout<<"\n 12.Combo 2:Spl.VEG Thali   Rs.250  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*250;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'm':cout<<"\n 13.Happy Meal              Rs.180 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*180;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+case 'n':cout<<"14.Choco Cake            Rs.40   ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*40;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+
+
+case 'o':cout<<" 15.Donuts                Rs.30  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*30;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+
+
+
+
+case 'p':cout<<"16.Nutty Cake            Rs.60 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r;
+sum+=no*60;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+
+default:
+goto maj;
+
+
+}
+getch();
+delay(10);
+}while((r=='y')||(r=='Y')); //switch inner ends
+cout<<"\nDO WANT TO PROCEED WITH THE BILL PAYMENT..?";
+cout<<"\n\nPRESS '1' TO PROCEED ";
+cout<<"\nPRESS '2' TO EXIT  \n";
+int fggg;
+cin>>fggg;
+if(fggg==1)
+{pay(sum);
+cout<<"\n1.MAIN MENU";
+cout<<"\n2.Exit";
+int day11;
+cin>>day11;
+if (day11==1)
+{goto label;}
+else
+exit(1);
+}
+else if (fggg==2)
+{exit(0);
+}
+delay(15000);
+break;
+
+case '2':
+goto bel;
+
+
+case '3':exit(1);
+break;
+
+default:
+cout<<"\nSorry !! You entered wrong .... (PLEASE TRY AGAIN)";
+goto se;
+
+}
+
+break;
+
+case '2':
+ser:
+getch();
+clrscr();
+
+cout<<"Non-Vegetarian";
+
+
+cout<<"                    \n\t\t\t       	NON-VEG.MENU               ";
+cout<<"                         \t\t\t                 ";
+cout<<" \n\n    NON-VEG MEALS                                   SHAKES $ DRINKS                 "        ;
+cout<<"                                                                     "        ;
+cout<<"\n a.  CHIC Tikki           Rs.30        | f.  Mango shake         Rs.60                    "               ;
+cout<<"\n b.  Chicken Grilled      Rs.40        | g.  Lime Juice          Rs.50              "              ;
+cout<<"\n c.  Rice and Curry CHIC  Rs.80        | h.  Faluda drink        Rs.90                      "           ;
+cout<<"\n d.  French Fries         Rs.60        | i.  Crusher drink       Rs.70             "     ;
+cout<<"\n e.  NON-Veg Wrap         Rs.75        | j. Chocolate mix       Rs.40 "       ;
+cout<<"\n\n       Meal Combos                                    Deserts   ";
+cout<<"\n       -----------	                              -------     ";
+cout<<"\n k.Combo 1:NON-Veg combo      Rs.200  | n.Choco Cake            Rs.40            ";
+cout<<"\n l.Combo 2:Spl.NON-VEG Thali  Rs.250  | o.Donuts                Rs.30                  ";
+cout<<"\n m.Happy Meal                 Rs.180  | p.Nutty Cake            Rs.60   ";
+
+int no1,sum1=0;
+char c1,r1,z;
+cout<<"\n\n\t WHAT DO YOU WANT TO DO..??";
+cout<<"\n1.PLACE AN ORDER";
+cout<<"\n2.GOT TO MAIN MENU";
+cout<<"\n3.EXIT";
+cout<<"\nPlease give your choice : ";
+cin>>z;
+switch(z)
+{
+case '1':
+
+do
+{don:
+cout<<"\n\n***PLEASE PLACE AN ORDER***";
+cout<<"\nENTER THE CODE OF THE ITEM";
+
+cin>>c1;
+switch(c1)
+{
+case 'a':cout<<"\n1. CHIC Tikki           Rs.30    ";
+
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*30;
+cout<<"\nTOTAL BILL :"<<sum1;
+break;
+case 'b':cout<<"\n2.Chicken Grilled       Rs.40  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+
+sum1+=no1*40;
+
+cout<<"\nTOTAL BILL :"<<sum1;
+break;
+case 'c':cout<<"\n3. Rice and Curry CHIC      Rs.80   ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+
+sum1+=no1*80;
+
+cout<<"\nTOTAL BILL :"<<sum1;
+break;
+case 'd':cout<<"\n 4.  French Fries         Rs.60     ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+
+sum1+=no1*60;
+
+cout<<"\nTOTAL BILL :"<<sum1;
+break;
+case 'e':cout<<"\n 5. NON-Veg Wrap             Rs.75  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+
+sum1+=no1*75;
+
+cout<<"\nTOTAL BILL :"<<sum1;
+break;
+case 'f':cout<<" 6.  Mango shake         Rs.60      ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*60;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'g':cout<<" 7.  Lime Juice          Rs.50 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*50;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'h':cout<<" 8.  Faluda drink        Rs.90       ";
+
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+
+cin>>r1;
+sum1+=no1*90;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'i':cout<<" 9.  Crusher drink       Rs.70     ";
+
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*70;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+
+case 'j':cout<<"10. Chocolate mix       Rs.40 ";
+
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*40;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'k':cout<<"\n 11.Combo 1:NON-VEG combo       Rs.200 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*200;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'l':cout<<"\n 12.Combo 2:Spl.NON-VEG Thali   Rs.250  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*250;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'm':cout<<"\n 13.Happy Meal              Rs.180 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*180;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+case 'n':cout<<"14.Choco Cake            Rs.40   ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*40;
+cout<<"\nTOTAL BILL :"<<sum;
+
+break;
+
+
+case 'o':cout<<" 15.Donuts                Rs.30  ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*30;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+
+
+
+
+case 'p':cout<<"16.Nutty Cake            Rs.60 ";
+cout<<"\nENTER THE NO OF PIECES";
+cin>>no1;
+cout<<"\nWANT TO ENTER MORE....(y\n)?";
+cin>>r1;
+sum1+=no1*60;
+cout<<"\nTOTAL BILL :"<<sum1;
+
+break;
+
+
+default:
+goto don;
+
+}
+getch();
+delay(10);
+}while((r1=='y')||(r1=='Y'));
+
+cout<<"\nDO WANT TO PROCEED WITH THE BILL PAYMENT..?";
+cout<<"\n\nPRESS '1' TO PROCEED ";
+cout<<"\nPRESS '2' TO EXIT  \n";
+int mk;
+cin>>mk;
+if(mk==1)
+{pay(sum1);
+cout<<"\n1.MAIN MENU";
+cout<<"\n2.Exit";
+int day1;
+cin>>day1;
+if (day1==1)
+{goto label;}
+else
+exit(1);
+}
+else if (mk==2)
+{exit(0);
+}
+
+
+delay(15000);
+break;
+
+
+
+case '2':
+goto lm;
+
+
+case '3':exit(1);
+break;
+
+default:
+cout<<"\nSorry !! You entered wrong .... (PLEASE TRY AGAIN)";
+goto ser;
+
+}
+break;
+
+case '3':
+sim :
+clrscr();
+
+char j,k,cho,das;
+ int v,sd=0,fgg;
+ cout<<"\t\t........SPECIAL OFFERS.......";
+ cout<<"\n\n#GET A COKE FREE ON PURCHASE OF RS 100 (or more)";
+ cout<<"\n#GET A RECHARGE OF RS 50 ON PURCHASE OF RS 200 (or more)";
+ cout<<"\n#GET A NUTTY CAKE FREE ON PURCHASE OF RS 300(or more)";
+cout<<"\n#GET A DELL LAPTOP BAG ON PURCHASE OF RS 1000";
+cout<<"\n\n\t\t.......NEW ARRIVALS........";
+cout<<"\n1.SAMOSA               RS 25";
+cout<<"\n2.CHAAT                RS 25";
+cout<<"\n3.CHOLE BHATURE        RS 25";
+cout<<"\n4.SIZZLERS             RS 25";
+cout<<"\n5.MOMOS                RS 25";
+cout<<"\n\n\t WHAT DO YOU WANT TO DO..??";
+cout<<"\na.PLACE AN ORDER";
+cout<<"\nb.GOT TO MAIN MENU";
+cout<<"\nc.EXIT";
+cout<<"\nPlease give your choice : ";
+cin>>j;
+switch(j)
+{
+case 'a':
+jas:
+do{cout<<"\n\n\tPLEASE PLACE YOUR ORDER ";
+cout<<"\nPlease enter the item code : ";
+cin>>k;
+switch(k)
+{
+case '1':cout<<"\n1.SAMOSA               RS 25";
+cout<<"\nEnter the no of pieces :";
+cin>>v;
+sd=sd+v*25;
+cout<<"\nTotal bill  = RS."<<sd;
+cout<<"\nWANT TO BUY MORE ...?";
+cout<<"\nPress 'y' for yes";
+cout<<"\nEnter your choice :";
+cin>>cho;
+break;
+case '2':cout<<"\n2.CHAAT                RS 25";
+cout<<"\nEnter the no of pieces : ";
+cin>>v;
+sd=sd+v*25;
+cout<<"\nTotal bill  = RS."<<sd;
+cout<<"\nWANT TO BUY MORE ...?";
+cout<<"\nPress 'y' for yes   ";
+cout<<"\nEnter your choice :";
+cin>>cho;
+break;
+
+case '3':cout<<"\n3.CHOLE BHATURE        RS 25";
+cout<<"\nEnter the no of pieces : ";
+cin>>v;
+sd=sd+v*25;
+cout<<"\nTotal bill  =  RS."<<sd;
+cout<<"\nWANT TO BUY MORE ...?";
+
+cout<<"\nPress 'y' for yes";
+cout<<"\nEnter your choice:";
+cin>>cho;
+break;
+case '4':cout<<"\n4.SIZZLERS                RS 25";
+cout<<"\nEnter the no of pieces : ";
+cin>>v;
+sd=sd+v*25;
+cout<<"\nTotal bill  = RS."<<sd;
+cout<<"\nWANT TO BUY MORE ...?";
+cout<<"\nPress 'y' for yes";
+cout<<"\nEnter your choice:";
+cin>>cho;
+break;
+case '5':cout<<"\n5.MOMOS                RS 25";
+cout<<"\nEnter the no of pieces : ";
+cin>>v;
+sd=sd+v*25;
+cout<<"\nTotal bill  = RS."<<sd;
+cout<<"\nWANT TO BUY MORE ...?";
+cout<<"\nPress 'y' for yes";
+cout<<"\nEnter your choice:";
+cin>>cho;
+break;
+default:
+cout<<"\nEnter again!!";
+goto jas;
+}
+}while (cho=='y'||cho=='Y');
+cout<<"\nDO WANT TO PROCEED WITH THE BILL PAYMENT..?";
+cout<<"\n\nPRESS '1' TO PROCEED ";
+cout<<"\nPRESS '2' TO EXIT  \n";
+cin>>fgg;
+if(fgg==1)
+{pay(sd);
+cout<<"\n1.MAIN MENU";
+cout<<"\n2.Exit";
+int day;
+cin>>day;
+if (day==1)
+{goto label;}
+else
+exit(1);
+
+}
+
+else 
+if(fgg==2)
+{goto label;}
+
+break;
+
+
+case 'b':
+goto label;
+
+
+case 'c':exit(1);
+break;
+
+default:
+cout<<"\nSorry !! You entered wrong .... (PLEASE TRY AGAIN)";
+goto sim;
+
+}
+break;
+case '4':
+xyz:
+getch();
+clrscr();
+int cvb;
+char gt,lap;
+
+cout<<"\n\t***..................EaT StreeT Bank..................***";
+cout<<"\n\nWelcome to EAT STREET Customer Care Service";
+cout<<"\nDO YOU WANT TO ADD SOME AMOUNT TO YOUR CREDIT CARD";
+cout<<"\nPRESS '1' to proceed , PRESS '2' to exit ";
+cin>>gt;
+switch(gt)
+{
+case '1' :
+
+cout<<"\nEnter your customer no. :";
+cin>>cvb;
+
+fstream obj,kk;
+int yo;
+
+    obj.open("sarr.DAT", ios::out|ios::in);
+	kk.open("sarr.DAT", ios::out|ios::in);
+
+    while(obj.read((char *) &arshu, sizeof(info)))
+	{
+		if(arshu.getno()==cvb)
+		{
+			arshu.putdata();
+
+				cout<<"\n\nEnter The amount to be added: RS.";
+				cin>>yo;
+				arshu.deposit(yo);
+
+				}
+		int pos=(-1)* sizeof(arshu);
+			obj.seekp(pos,ios::cur);
+			obj.write((char *) &arshu, sizeof(info));
+			cout<<"\n\n\t Record Updated\n";
+
+
+}
+obj.close();
+
+
+
+jak:
+cout<<"\n\nWHAT DO YOU WANT NOW:";
+cout<<"\n1.ADD MORE CREDIT";
+cout<<"\n2.GO TO MAIN MENU";
+cout<<"\n3.EXIT";
+cout<<"\nEnter your choice";
+cin>>lap;
+switch(lap)
+{
+case '1':
+goto xyz;
+case '2':
+goto label;
+case '3':
+exit(0);
+defualt:
+goto jak;
+}
+
+
+
+break;
+case '2': exit(1);
+break;
+
+}
+ break;
+case '5':
+exit(1);
+break;
+case '6':
+ss2:
+getch();
+clrscr();
+cout<<"\n\t\t______CONTACT US______";
+cout<<"\n\t\tEAT STREET RESTAURANT";
+cout<<"\n\nMANAGER : ARSHDEEP SINGH BHATIA";
+cout<<"\n\nCALL US :    9888888888";
+cout<<"\n\nYou can send your suggestions at:     eatstreet@gmail.com ";
+cout<<"\n\n>FOR ANY QUERIES LOGIN TO:   www.eatstreet.com";
+cout<<"\n\nKEEP EATING!!KEEP ENJOYING........!!";
+cout<<"\n\nWHAT DO YOU WANT NOW:";
+
+cout<<"\n1.GO TO MAIN MENU";
+cout<<"\n2.EXIT";
+cout<<"\nEnter your choice";
+int lap1;
+cin>>lap1;
+if(lap1==1)
+{goto sds;}
+else
+{
+exit(0);
+}
+
+
+
+
+
+
+break;
+
+
+default:
+goto label;
+}
+
+
+
+getch();
+return 0;
+}
+
+
+void pay(int sa)
+{fstream mn,dc;
+mn.open("sarr.dat",ios::in|ios::out);
+dc.open("sarr.dat",ios::in|ios::out);
+
+getch();
+man:
+clrscr();
+char ha;
+int gh,ghh;
+
+cout<<"\n\t.......WELCOME TO BILL PAYMENT MENU........";
+cout<<"\nYour total bill is "<<sa;
+cout<<"\n1.To pay bill press '1'";
+cout<<"\n2.To exit press '2'\n";
+cout<<"\nEnter your choice : ";
+cin>>ha;
+switch(ha)
+{case '1':
+cout<<"\nPlease enter your customer no. :";
+cin>>gh;
+while(mn.read((char*)&arsh,sizeof(arsh)))
+{
+
+if(arsh.getno()==gh)
+{
+arsh.putdata();
+cout<<"\n";
+arsh.amtt(sa);
+int po=(-1)* sizeof(arsh);
+			mn.seekp(po,ios::cur);
+			mn.write((char *) &arsh, sizeof(info));
+			
+
+		cout<<"\nBILL SUCCESSFULLY PAID";
+			cout<<"\n\t THANK YOU FOR SHOPPING\n";	
+			
+}
+
+}
+mn.close();
+cout<<"##** NOW YOUR RECORD IS **##";
+while(dc.read((char*)&am,sizeof(am)))
+{
+
+if(am.getno()==gh)
+{
+am.putdata();
+cout<<"\n";
+}
+}
+
+
+dc.close();
+break;
+case '2':
+
+exit(1);
+break;
+default:
+goto man;
+}
+
+
+return;
+
+
+
+
+}
+
+
+
